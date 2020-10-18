@@ -77,3 +77,8 @@ def check_model(df,
     if not resids_are_homo:
         print("Residuals failed homoskedasticity test")
     return ols
+
+
+
+def normalize(feature):
+    return (feature - feature.mean()) / feature.std()
