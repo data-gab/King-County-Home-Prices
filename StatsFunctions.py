@@ -6,6 +6,9 @@ import scipy.stats as scs
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.linear_model import LinearRegression
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 # Create a function to build a statsmodels ols model
 def build_sm_ols(df, features_to_use, target, add_constant=False, show_summary=True):
     X = df[features_to_use]
@@ -101,3 +104,17 @@ def check_model(df,
 
 def normalize(feature):
     return (feature - feature.mean()) / feature.std()
+
+
+
+def plot_residuals(ols):
+    residuals = ols.resid
+    plt.figure(figsize=(8,5))
+    plt.title('Residuals Distribution')
+    sns.distplot(residuals)
+    plt.show()
+    plt.figure()
+    x_axis = np.linspace(0, 1, len(residuals))
+    plt.scatter(x_axis, residuals)
+    plt.title('Residuals and Baseline')
+    plt.show()
