@@ -58,13 +58,16 @@ The objectives of this analysis was to gain presepctive and understanding of the
 ## Proposed Questions
 ***
 
-### Question 1: What are the Top 20 Zipcodes in Terms of Price of Home?
+### Question 1: Which Zipcodes have the Highest Average Home Price?
 <img src= "images/kc_zipcodes.gif"/>
 
 #### Graphics
 After data was cleaned and organized (see Access to cleaned database notebooks), exploratory data analysis was performed and the following graph was created using the Python data visualization library, Seaborn. The following visualization displays the top 20 zipcodes in King County, WA in terms of price of homes
 
-<img src= "images/top_20_zips.png"/>
+<img src= "images/top-20.png"/>
+
+***
+<img src= "images/starred-zips.png"/>
 
 #### Observations and Conclusions
 The visualization above shows the top 20 zipcodes according to average home price. As you can see from the map above (or by conducting a simple google search), a majority of these zipcodes are near the main city of Seattle, WA. 
@@ -78,14 +81,14 @@ I would recommend the property investor to flip houses in these zipcodes so that
 The above information is from a [pdf](https://www.kingcounty.gov/depts/assessor/Reports/area-reports/2017/residential-westcentral/~/media/depts/assessor/documents/AreaReports/2017/Residential/013.ashx) that was obtained from the King County government website. This information will be used for insight on the following questions.
 
 ***
-### Question 2: What Grade of Homes Sell at the Highest Price?
+### Question 2:  What Grade of Homes Sell at the Highest Average Price?
 
 #### Graphics
 The visualizations below demonstrate the grades of homes according to the home price.
 
-<img src= "images/grd_vs_price.png"/>
+<img src= "images/grd_vs_avg_price.png"/>
 <img src= "images/grd_joint.png"/>
-<img src= "images/grade_vs_price.png"/>
+<img src= "images/grade-vs-price.png"/>
 
 #### Observations and Conclusions
 The above graphics show that the price of the houses increases as the grade increases. This makes sense since most home buyers are looking to buy homes that have little or no rennovation to be done. Even though the building grades range from 1-13, after removing outliers in the data, we found that a majority of homes sold in King County were from grades 5-11.
@@ -94,12 +97,12 @@ The above graphics show that the price of the houses increases as the grade incr
 I would recommended to the stakeholder to not hold back on construction and rennovations. As you can see from the chart and graphics provided above, the homes that sell at the highest price are homes with grades of 11. A grade of 11 is described as "Custom design and higher quality finish work, with added amenities of solid woods, bathroom fixtures and more luxurious options." This shows that home buyers are willing to pay more for a home that is well constructed and higher quality. The property investor can cheap out on renovations and create an average house, but they will not see a huge return on investment. If the property owner rennovates the homes to have a building range from 9-13, I believe they will see a great return on investment.
 
 ***
-### Question 3: What Condition of Homes Sell at the Highest Price?
+### Question 3: What Condition of Homes Sell at the Average Highest Price?
 
 #### Graphics
 The visualizations below demonstrate the condition of homes according to home price. The condition is based off of the age and grade of the homes.
 
-<img src= "images/con_vs_price.png"/>
+<img src= "images/cond-vs-avg-price.png"/>
 <img src= "images/cond_joint.png"/>
 
 #### Observations and Conclusions
