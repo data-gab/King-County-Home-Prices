@@ -6,12 +6,12 @@
 ## Business Problem
 ***
 
-A property investor is looking to "flip" houses in King County, WA for profit. "Flipping houses" is a term used for the action of buying property (in this case houses) that are in poor to average conditions in a good, well-established neighborhood (most likely in a expensive housing market) for cheap and renovating those houses and selling them for higher than they were bought for in order to make profit. The property investor wants to know if King County, WA is a good housing market to invest in and flip houses for profit.
+A property investor is looking to "flip" houses in King County, WA, for profit. "Flipping houses" is a term used for the action of buying property (in this case houses) that are in poor to average conditions in a good, well-established neighborhood (most likely in an expensive housing market) for cheap. The houses are renovated and sold for a higher price than their original value to make a profit. The property investor wants to determine if King County, WA is a good housing market to invest in and flip houses for a profit.
 
 ## Objectives
 ***
 
-The objectives of this analysis was to gain presepctive and understanding of the King County housing market so that the stakeholder, a property investor looking to flip houses in King County for profit, has the information they need to succeed in their endeavours. The data used in this analysis was obtained from the [King County Website](https://www.kingcounty.gov/services/data.aspx) along with a [pdf](https://www.kingcounty.gov/depts/assessor/Reports/area-reports/2017/residential-westcentral/~/media/depts/assessor/documents/AreaReports/2017/Residential/013.ashx) also obtained from the King County government website that gives more information about the dataset.
+The objective of this analysis is to gain perspective and understanding of the King County housing market. I want to make sure the property investor looking to flip houses in King County has the information they need to succeed in their endeavors. The data used in this analysis was obtained from the [King County Website](https://www.kingcounty.gov/services/data.aspx) along with a [pdf](https://www.kingcounty.gov/depts/assessor/Reports/area-reports/2017/residential-westcentral/~/media/depts/assessor/documents/AreaReports/2017/Residential/013.ashx) also obtained from the King County government website that gives more information about the dataset.
 
 ## Data Obtained from King County Website
 ***
@@ -62,19 +62,18 @@ The objectives of this analysis was to gain presepctive and understanding of the
 <img src= "images/kc_zipcodes.gif"/>
 
 #### Graphics
-After data was cleaned and organized (see Access to cleaned database notebooks), exploratory data analysis was performed and the following graph was created using the Python data visualization library, Seaborn. The following visualization displays the top 20 zipcodes in King County, WA in terms of price of homes
+After data was cleaned and organized (see Access to cleaned database notebooks), I performed some exploratory data analysis. I created the following graph using the Python data visualization library, Seaborn. The following visualization displays the top 20 zip codes in King County, WA, in terms of home prices.
 
-<img src= "images/top-20.png"/>
+<img src= "images/top-20.png" width=900/>
 
 ***
 <img src= "images/starred-zips.png"/>
 
 #### Observations and Conclusions
-The visualization above shows the top 20 zipcodes according to average home price. As you can see from the map above (or by conducting a simple google search), a majority of these zipcodes are near the main city of Seattle, WA. 
+The visualization above shows the top 20 zip codes according to the average home price. As you can see from the map above (or by conducting a simple google search), most of these zip codes are near the central city of Seattle, WA. 
 
 #### Recommendations
-I would recommend the property investor to flip houses in these zipcodes so that they can make more profit off of their rennovations. These a majority of the zipcodes reside outside of the main city of Seattle, WA. These zipcodes are beneficial for home owners who have families or do not want to live within the hustle and bustle of the city and are looking for a more tranquil environment, without being too far from the city. Being close to Seattle is a major attraction to many home buyers since it is most likely where they work or where more job opportunitites are available.
-
+I would recommend the property investor to flip houses in these zip codes to profit from their renovations. These a majority of the zipcodes reside outside of the central city of Seattle, WA. These zip codes are great for homeowners who have families or do not want to live within the city's hustle and bustle and look for a more tranquil environment without being too far from the city. Being close to Seattle is a major attraction to many home buyers since it is most likely where they work or where more job opportunities are available.
 ***
 <img src= "images/cond and grade info.png"/>
 
@@ -91,10 +90,10 @@ The visualizations below demonstrate the grades of homes according to the home p
 <img src= "images/grade-vs-price.png"/>
 
 #### Observations and Conclusions
-The above graphics show that the price of the houses increases as the grade increases. This makes sense since most home buyers are looking to buy homes that have little or no rennovation to be done. Even though the building grades range from 1-13, after removing outliers in the data, we found that a majority of homes sold in King County were from grades 5-11.
+The above graphics show that the price of the houses increases as the grade increases. This makes sense since most home buyers are looking to buy homes with little or no renovations to be done. Even though the building grades range from 1-13, after removing outliers in the data, we found that most homes sold in King County were from grades 5-11.
 
 #### Recommendations
-I would recommended to the stakeholder to not hold back on construction and rennovations. As you can see from the chart and graphics provided above, the homes that sell at the highest price are homes with grades of 11. A grade of 11 is described as "Custom design and higher quality finish work, with added amenities of solid woods, bathroom fixtures and more luxurious options." This shows that home buyers are willing to pay more for a home that is well constructed and higher quality. The property investor can cheap out on renovations and create an average house, but they will not see a huge return on investment. If the property owner rennovates the homes to have a building range from 9-13, I believe they will see a great return on investment.
+I would recommend to the stakeholder not to hold back on construction and renovations. As you can see from the chart and graphics provided above, the homes that sell at the highest price are homes with grades of 11. A degree of 11 describes a house of "Custom design and higher quality finish work, with added amenities of solid woods, bathroom fixtures, and more luxurious options." This shows that homebuyers are willing to pay more for a home that is well constructed and of higher quality. The property investor can cheap out on renovations and create an average house, but they will not see a significant investment return. If the property owner renovates the homes to have a building range from 9-13, I believe they will see a great return on investment.
 
 ***
 ### Question 3: What Condition of Homes Sell at the Average Highest Price?
@@ -106,7 +105,7 @@ The visualizations below demonstrate the condition of homes according to home pr
 <img src= "images/cond_joint.png"/>
 
 #### Observations and Conclusions
-The graphics above show that there is an increase in home prices when the home condition is higher. This makes sense since most home buyers are looking to buy homes that are in good condition so that they do not have to further renovate or deal with construction issues. Even though the building conditions range from 1-5, after removing outliers in the data, we found that a majority of homes sold in King County had condition ratings from 2-5, which makes since since no one want to buy a home that is seriously deteriorated and needs many repairs like homes of poor condition (1 condition rating). A condition rating of 5 seems to be the most profitable. it seems that houses at condition 3 sell higher than houses at condition 4. 
+The graphics above show that there is an increase in home prices when the home condition is higher. This makes sense since most home buyers are looking to buy homes that are in good condition so that they do not have to further renovate or deal with construction issues. Even though the building conditions range from 1-5, after removing outliers in the data, we found that most homes sold in King County had condition ratings from 2-5. This makes sense since no one wants to buy a home that is seriously deteriorated and needs many repairs, like homes of poor condition (1 condition rating). A condition rating of 5 seems to be the most profitable. It appears that houses at condition 3 sell higher than homes at condition 4. This is most likely due to homebuyers willing to do minor renovations for than buying an expensive home.
 
 #### Recommendations
-I would recommend that the property investor flip homes in conditions 2-3 so that they can negotiate a lower price with the seller. Using the data I obtained, I would recommend the home owner to rennovate the home to the highest possible condition, being 5, which is described as "Excellent maintenance and updating on home. Not a total renovation", which would help them to sell the house at a higher price.
+I would recommend that the property investor flip homes in conditions 2-3 to negotiate a lower price with the seller. I would recommend the homeowner renovate the house to the highest possible condition, being 5, described as "Excellent maintenance and updating on home. Not a total renovation", which would help them sell the house at a higher price.
